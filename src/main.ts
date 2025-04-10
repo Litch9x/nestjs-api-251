@@ -52,7 +52,7 @@ async function bootstrap() {
   });
 
   // Lắng nghe cổng được cấu hình trong .env hoặc mặc định là 8000
-  await app.listen(process.env.PORT ?? 8000);
+  await app.listen(process.env.PORT || 8000);
 }
 
 bootstrap();
