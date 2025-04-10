@@ -5,7 +5,7 @@ import { UserRole } from '../../enums/user-role.enum';
 import { Request } from 'express';
 
 @Controller('users')
-export class UserController {
+export class RolesController {
   @Get('admin')
   @UseGuards(RolesGuard)
   @Roles(UserRole.ADMIN)
