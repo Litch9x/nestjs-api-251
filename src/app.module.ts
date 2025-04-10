@@ -36,7 +36,7 @@ import { AuthService } from './modules/auth/auth.service';
 import { AuthController } from './modules/auth/auth.controller';
 import { AuthModule } from './modules/auth/auth.module';
 import { TokensModule } from './modules/tokens/tokens.module';
-import { UserController } from './modules/roles/roles.controller';
+import { RolesController } from './modules/roles/roles.controller';
 import { LocalStrategy } from './modules/auth/local.strategy';
 import { SessionSerializer } from './modules/auth/session.serializer';
 import { RedisService } from './modules/redis/redis.service';
@@ -90,7 +90,7 @@ import { AdminUsersModule } from './modules/admin/admin-users/admin-users.module
     OrdersController,
     CustomersController,
     AuthController,
-    UserController,
+    RolesController,
     AdminUsersController,
   ],
   providers: [
